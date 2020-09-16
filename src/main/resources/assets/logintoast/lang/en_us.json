@@ -1,0 +1,13 @@
+{
+  "logintoast.config.menu": "Login Toast Config Menu",
+  "logintoast.config.general": "General",
+  "logintoast.config.option.showchatmessage": "Show login chat message",
+  "logintoast.config.option.showchatmessage.description": "Display the message when a player joins the server in the chat",
+  "logintoast.config.option.showtoast": "Show login toast",
+  "logintoast.config.option.showtoast.description": "Display the toast when a player joins the server",
+  "logintoast.config.option.toastduration": "Toast display duration",
+  "logintoast.config.option.toastduration.description": "The duration the toast will be displayed in seconds",
+
+  "logintoast.joined.game": "joined the game"
+  
+}
