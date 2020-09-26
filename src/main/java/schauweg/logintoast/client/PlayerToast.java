@@ -1,11 +1,8 @@
 package schauweg.logintoast.client;
 
-import com.google.common.collect.Ordering;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawableHelper;
-import net.minecraft.client.gui.hud.PlayerListHud;
-import net.minecraft.client.network.ClientPlayNetworkHandler;
 import net.minecraft.client.network.PlayerListEntry;
 import net.minecraft.client.render.entity.PlayerModelPart;
 import net.minecraft.client.toast.Toast;
@@ -14,10 +11,6 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.text.TranslatableText;
 import schauweg.logintoast.config.LoginToastConfigManager;
-
-import java.util.Collection;
-import java.util.List;
-import java.util.UUID;
 
 public class PlayerToast extends DrawableHelper implements Toast {
 
@@ -30,7 +23,7 @@ public class PlayerToast extends DrawableHelper implements Toast {
     @Override
     public Visibility draw(MatrixStack matrixStack, ToastManager manager, long startTime) {
 
-        manager.getGame().getTextureManager().bindTexture(TOASTS_TEX);
+        manager.getGame().getTextureManager().bindTexture(TEXTURE);
         RenderSystem.color3f(1.0F, 1.0F, 1.0F);
         manager.drawTexture(matrixStack, 0, 0, 0, 0, this.getWidth(), this.getHeight());
 

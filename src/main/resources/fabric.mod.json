@@ -13,10 +13,10 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "LoginToastClient"
+      "schauweg.logintoast.client.LoginToastClient"
     ],
     "main": [
-      "Main"
+      "schauweg.logintoast.Main"
     ],
     "modmenu": [ "schauweg.logintoast.modmenu.LoginToastModMenuIntegration" ]
   },
